@@ -81,3 +81,5 @@ def changeGreedy(coins,value):
 coins = [1,2,4,8]
 
 results = changeDP(coins, 15)
+
+print results
