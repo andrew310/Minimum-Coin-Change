@@ -5,10 +5,15 @@ def changeDP(coinValueList,value):
     #create table for coinList * value
     minCoins = [[0 for x in range(value+1)]for x in range(len(coinValueList))]
     #fill first line of array with increments of 1
+    
+    #auxiliary array used to keep track of coins used, will be deconstructed in separate function
+    coinsUsed = [[0 for x in range(value+1)]for x in range(len(coinValueList))]
+    
+     #for first row, we are using pennies, so put increments of 1
     for i in range(value+1):
         minCoins[0][i] = i
-
-    returnThis = []
+       
+        coinsUsed[0][i] = i
 
     #outer loop for coin denomination array
     for i in range(1, len(coinValueList)):
@@ -22,27 +27,35 @@ def changeDP(coinValueList,value):
             #than we did it with the previous coin
             elif j>= coinValueList[i]:
                 minCoins[i][j] = min(minCoins[i-1][j], minCoins[i][j-coinValueList[i]]+1)
+                coinsUsed[i][j] += 1
 
-        returnThis.append(minCoins[i][j]/coinValueList[i])
+    getCoins(len(coinValueList)-1, value, coinValueList, coinsUsed)
 
-    return (returnThis, minCoins[len(coinValueList)-1][value])
+    return (minCoins[len(coinValueList)-1][value])
+
+#function to take usedCoins array and break it down to see how many of each coins used
+def getCoins(i, j, denom, used):
+    if j < 0:
+        return
+
+       
+    if used[i][j] >0:
+        print denom[i]
+        #print used[i][j]
+        if j-denom[i]<denom[i]:
+            #change denomination.
+            print "change denom"
+            #print j-denom[i]
+            getCoins(i-1, j-denom[i], denom, used)
+
+        else:
+            #same denomination
+            print "same denom"
+            getCoins(i, j-denom[i], denom, used)
 
 
-def changeGreedy(coins,value):
-    pocket = []
-    sum = 0
-    #start with highest value coin (assumes sorted array of denominations)
-    for i in range((len(coins)-1), -1, -1):
-        temp = value/coins[i]
-        pocket += [1,] * temp
-        value -= coins[i] * temp
-        if temp != 0:
-            sum +=1
 
-    return (pocket,sum)
 
 coins = [1,2,4,8]
 
 results = changeDP(coins, 15)
-
-print results
