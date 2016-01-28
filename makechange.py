@@ -54,6 +54,21 @@ def getCoins(i, j, denom, used):
             getCoins(i, j-denom[i], denom, used)
 
 
+def changeGreedy(coins,value):
+    pocket = []
+    sum = 0
+    #start with highest value coin (assumes sorted array of denominations)
+    for i in range((len(coins)-1), -1, -1):
+        temp = value/coins[i]
+        pocket += [1,] * temp
+        value -= coins[i] * temp
+        if temp != 0:
+            sum +=1
+
+    return (pocket,sum)
+
+
+
 
 
 coins = [1,2,4,8]
