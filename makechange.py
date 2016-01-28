@@ -1,6 +1,5 @@
 __author__ = 'Andrew.Brown'
 
-
 def changeDP(coinValueList,value):
     #create table for coinList * value
     minCoins = [[0 for x in range(value+1)]for x in range(len(coinValueList))]
@@ -29,29 +28,37 @@ def changeDP(coinValueList,value):
                 minCoins[i][j] = min(minCoins[i-1][j], minCoins[i][j-coinValueList[i]]+1)
                 coinsUsed[i][j] += 1
 
-    getCoins(len(coinValueList)-1, value, coinValueList, coinsUsed)
+    newList = [0]*len(coinValueList) 
+    getCoins(len(coinValueList)-1, value, coinValueList, coinsUsed, newList)
 
     return (minCoins[len(coinValueList)-1][value])
 
 #function to take usedCoins array and break it down to see how many of each coins used
-def getCoins(i, j, denom, used):
-    if j < 0:
+def getCoins(i, j, denom, used, returnThis):
+    if j < 0 or i < 0:
         return
-
-       
+ 
     if used[i][j] >0:
-        print denom[i]
+        returnThis[i] +=1
+        #print denom[i]
         #print used[i][j]
         if j-denom[i]<denom[i]:
             #change denomination.
-            print "change denom"
-            #print j-denom[i]
-            getCoins(i-1, j-denom[i], denom, used)
+            getCoins(i-1, j-denom[i], denom, used, returnThis)
 
         else:
             #same denomination
-            print "same denom"
-            getCoins(i, j-denom[i], denom, used)
+           # print "same denom"
+            getCoins(i, j-denom[i], denom, used, returnThis)
+            
+            
+    else:
+        print "hi"
+        getCoins(i-1, j, denom, used, returnThis)
+        
+
+	print returnThis
+
 
 
 def changeGreedy(coins,value):
