@@ -40,7 +40,7 @@ def changeDP(coinValueList,value):
 
 
 ##############################################################
-# getCoins(i, j, denom, used, returnThis)
+# getCoins(i, j, denom, used, fill_This
 # This function will fill the returnThis array with the number of times each denomination has been used
 # inputs: length of coin denomination list, value of change needed, coin denomination list, coinsUsed array, and array to be filled with counts of denoms used
 # returns: n/a, uses reference to fill the returnThis
