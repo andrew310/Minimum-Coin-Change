@@ -1,5 +1,7 @@
 __author__ = 'Andrew.Brown'
 
+from ast import literal_eval
+
 ##############################################################
 # changeDP(coinValueList, value)
 # uses the dynamic programming approach to solve the min coin problem in O(nA) running time
@@ -76,19 +78,56 @@ def changeGreedy(coins,value):
     #start with highest value coin (assumes sorted array of denominations)
     for i in range((len(coins)-1), -1, -1):
         temp = value/coins[i]
-        pocket[i] += 1
+        pocket[i] += temp
         value -= coins[i] * temp
         if temp != 0:
-            sum +=1
+            sum +=temp
 
-    return (pocket,sum)  
-
-
+    return (pocket,sum) 
 
 
+print (changeGreedy([1,2,3,4], 11))
 
-coins = [1,2,4,8]
+###CLEAN THE FILE###
+## THIS IS NECESSARY BECAUSE THERE WERE BLANK LINES AT END OF PROVIDED FILE ##
+## THE BLANK LINES WERE THROWING ERRORS IN LITERAL EVAL ##
 
-results = changeDP(coins, 15)
+f = open("CoinW16.txt", "r")
+lines = f.readlines()
+f.close()
+f = open("CoinW16.txt", "w")
+for line in lines:
+  if not line.isspace():
+    f.write(line)
 
-print results
+f.close()
+
+
+##OPEN FILE AGAIN##
+inFile = open("CoinW16.txt", "r")
+outFile = open("results.txt", "w")
+appendFile = open("MSS_Results.txt", "a")
+
+
+
+def runAlgorithm(algorithm, note):
+    outFile.write("\n")
+    outFile.write(note)
+    outFile.write("\n")
+    while True:
+        line1 = inFile.readline()
+        line2 = inFile.readline()
+        if not line2: break
+        denoms = literal_eval(line1)
+        valueNeeded = literal_eval(line2)
+        outFile.write(str(algorithm(denoms, valueNeeded)))
+        outFile.write("\n")
+        
+
+
+#runAlgorithm(changeDP, "Dynamic Programming Results:")
+#runAlgorithm(changeGreedy, "Dynamic Programming Results:")
+
+inFile.close()
+outFile.close()
+
