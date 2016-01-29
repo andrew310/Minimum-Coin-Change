@@ -101,7 +101,7 @@ def changeGreedy2(coins, value):
         value %= coins[i]
         coinCount += temp
         dictionaryCount[coins[i]] = temp
-    return dictionaryCount, coinCount
+    return (dictionaryCount, coinCount)
 
 ###CLEAN THE FILE###
 ## THIS IS NECESSARY BECAUSE THERE WERE BLANK LINES AT END OF PROVIDED FILE ##
@@ -117,32 +117,27 @@ for line in lines:
 
 f.close()
 
-
-##OPEN FILE AGAIN##
-inFile = open("CoinW16.txt", "r")
+##OPEN OUT FILE##
 outFile = open("results.txt", "w")
-appendFile = open("MSS_Results.txt", "a")
-
-
 
 def runAlgorithm(algorithm, note):
+    inFile = open("CoinW16.txt", "r")
     outFile.write("\n")
     outFile.write(note)
     outFile.write("\n")
     while True:
         line1 = inFile.readline()
         line2 = inFile.readline()
-        if not line2: break
+        if not line1: break
         denoms = literal_eval(line1)
         valueNeeded = literal_eval(line2)
         outFile.write(str(algorithm(denoms, valueNeeded)))
         outFile.write("\n")
-        
+    inFile.close()
+
+runAlgorithm(changeDP, "Dynamic Programming results:")        
+runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
 
 
-runAlgorithm(changeDP, "Dynamic Programming Results:")
-runAlgorithm(changeGreedy, "Greedy Algorithm Results:")
-
-inFile.close()
 outFile.close()
 
