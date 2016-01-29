@@ -20,6 +20,9 @@ def changeDP(coinValueList,value):
         minCoins[0][i] = i
        
         coinsUsed[0][i] = i
+       
+    #this will be the index we pass to getCoins function
+    bestIndex = 0
 
     #outer loop for coin denomination array
     for i in range(1, len(coinValueList)):
@@ -34,9 +37,14 @@ def changeDP(coinValueList,value):
             elif j>= coinValueList[i]:
                 minCoins[i][j] = min(minCoins[i-1][j], minCoins[i][j-coinValueList[i]]+1)
                 coinsUsed[i][j] += 1
-	#list to be filled by getCoins function
+        
+        #only increment best index if we get a smaller sum!
+        if minCoins[i][value] < minCoins[i-1][value]:
+            bestIndex += 1
+          
+    #list to be filled by getCoins function
     newList = [0]*len(coinValueList) 
-    getCoins(len(coinValueList)-1, value, coinValueList, coinsUsed, newList)
+    getCoins(bestIndex, value, coinValueList, coinsUsed, newList)
     return (newList, minCoins[len(coinValueList)-1][value])
 
 
@@ -82,7 +90,6 @@ def changeGreedy(coins,value):
         value -= coins[i] * temp
         if temp != 0:
             sum +=temp
-
     return (pocket,sum) 
 
 def changeGreedy2(coins, value):
@@ -95,8 +102,6 @@ def changeGreedy2(coins, value):
         coinCount += temp
         dictionaryCount[coins[i]] = temp
     return dictionaryCount, coinCount
-
-print (changeGreedy([1,2,3,4], 11))
 
 ###CLEAN THE FILE###
 ## THIS IS NECESSARY BECAUSE THERE WERE BLANK LINES AT END OF PROVIDED FILE ##
@@ -135,8 +140,8 @@ def runAlgorithm(algorithm, note):
         
 
 
-#runAlgorithm(changeDP, "Dynamic Programming Results:")
-#runAlgorithm(changeGreedy, "Dynamic Programming Results:")
+runAlgorithm(changeDP, "Dynamic Programming Results:")
+runAlgorithm(changeGreedy, "Greedy Algorithm Results:")
 
 inFile.close()
 outFile.close()
