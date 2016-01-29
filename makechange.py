@@ -76,10 +76,20 @@ def changeGreedy(coins,value):
 
 
 
+def changeGreedy2(coins, value):
+    coinCount = 0
+    dictionaryCount = {}
+    #start with highest value coin (assumes sorted array of denominations)
+    for i in range(len(coins) - 1, -1, -1):
+        temp = value/coins[i]
+        value %= coins[i]
+        coinCount += temp
+        dictionaryCount[coins[i]] = temp
+    return dictionaryCount, coinCount
 
 
 coins = [1,2,4,8]
 
-results = changeDP(coins, 15)
+results = changeGreedy2(coins, 15)
 
 print results
