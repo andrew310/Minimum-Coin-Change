@@ -1,6 +1,27 @@
 __author__ = 'Andrew.Brown'
 
 from ast import literal_eval
+import sys
+
+def changeSlow(coinValueList, total, coinDict):
+    if total == 0:
+        return 0
+
+    res = sys.maxint
+
+    for i in range(len(coinValueList)):
+        if coinValueList[i] <= total:
+            sub_res = changeSlow(coinValueList, total-coinValueList[i], coinDict)
+
+            if sub_res != sys.maxint and sub_res + 1 < res:
+                res = sub_res + 1
+    
+        '''if coinValueList[i] not in coinDict:
+            coinDict[coinValueList[i]] = 0
+        else:
+            coinDict[coinValueList[i]] += 1'''
+
+    return res
 
 ##############################################################
 # changeDP(coinValueList, value)
@@ -141,3 +162,8 @@ runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
 
 outFile.close()
 
+
+coins = [12, 7, 3, 1]
+coinDict = {}
+print(changeSlow(coins, 29, coinDict))
+print(coinDict)
