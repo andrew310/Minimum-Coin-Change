@@ -151,20 +151,29 @@ def runAlgorithm(algorithm, note):
         if not line1: break
         denoms = literal_eval(line1)
         valueNeeded = literal_eval(line2)
-        outFile.write(str(algorithm(denoms, valueNeeded)))
-        outFile.write("\n")
+        if algorithm == 'changeSlow':
+            coinsDict = {}
+            outFile.write("Minimum # of coins needed: ")
+            outFile.write(str(changeSlow(denoms, valueNeeded, coinsDict, True)))
+            outFile.write("\nCoin Count: ")
+            outFile.write(str(coinsDict))
+            outFile.write("\n")
+        else:
+            outFile.write(str(algorithm(denoms, valueNeeded)))
+            outFile.write("\n")
     inFile.close()
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
+runAlgorithm('changeSlow', "Brute Force/Recursive Algorithm Results:")
 
 
 outFile.close()
 
 
-coins = [1, 2, 4, 8]
+'''coins = [1, 2, 4, 8]
 coinsDict = {}
 print("Minimum # of coins: ")
 print changeSlow(coins, 15, coinsDict, True)
 print("Coin Count: ")
-print coinsDict
+print coinsDict'''
