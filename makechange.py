@@ -3,6 +3,8 @@ __author__ = 'Andrew.Brown'
 from ast import literal_eval
 import sys
 
+sys.setrecursionlimit(10000) #for testing on changeslow
+
 def changeSlow(coinValueList, total, coinsDict, build):
     if build == True:
         buildDict(coinValueList, coinsDict)
@@ -89,7 +91,7 @@ def getCoins(i, j, denom, used, fill_This):
             #same denomination
             getCoins(i, j-denom[i], denom, used, fill_This)
  
-	#if current denom no longer used, go to next denom
+    #if current denom no longer used, go to next denom
     else:
         getCoins(i-1, j, denom, used, fill_This)
 
@@ -170,10 +172,42 @@ runAlgorithm('changeSlow', "Brute Force/Recursive Algorithm Results:")
 
 outFile.close()
 
+"""
+FOR TESTING
+"""
+outFile = open("testResults.txt", "w")
 
-'''coins = [1, 2, 4, 8]
-coinsDict = {}
-print("Minimum # of coins: ")
-print changeSlow(coins, 15, coinsDict, True)
-print("Coin Count: ")
-print coinsDict'''
+def testHelper(algorithm, note):
+    inFile = open("tests.txt", "r")
+    outFile.write("\n")
+    outFile.write(note)
+    outFile.write("\n")
+    while True:
+        line1 = inFile.readline()
+        line2 = inFile.readline()
+        if not line1: break
+        denoms = literal_eval(line1)
+        valueNeeded = literal_eval(line2)
+        outFile.write("\n denominations: " + str(denoms) + "\n \n")
+        for v in valueNeeded:
+            if algorithm == 'changeSlow':
+                coinsDict = {}
+                outFile.write("value needed: " + str(v) + "\n")
+                outFile.write("Minimum # of coins needed: ")
+                outFile.write(str(changeSlow(denoms, v, coinsDict, True)))
+                outFile.write("\nCoin Count: ")
+                outFile.write(str(coinsDict))
+                outFile.write("\n")
+            else:
+                outFile.write("value needed: " + str(v) + "\n")
+                outFile.write(str(algorithm(denoms, v)))
+                outFile.write("\n")
+    inFile.close()
+
+testHelper(changeDP, "Dynamic Programming results:")
+testHelper(changeGreedy2, "Greedy Algorithm Results:")
+testHelper('changeSlow', "Brute Force/Recursive Algorithm Results:")
+
+
+outFile.close()
+
