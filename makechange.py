@@ -24,6 +24,23 @@ def buildDict(coinValueList, coinsDict):
     for i in range(len(coinValueList)):
         coinsDict[str(coinValueList[i])] = 0
 
+def changeSlow2(coinArray, value):
+    minSum = value
+    minCoins = [0] * len(coinArray)
+
+    for i in range(0, len(coinArray)):
+        if(coinArray[i] <= value):
+            tempArr, tempCoins = changeSlow2(coinArray, value - coinArray[i])
+            tempCoins +=1
+            tempArr[i] = tempArr[i] + 1
+
+            if tempCoins < minSum:
+                minSum = tempCoins
+                minCoins = tempArr
+                
+    return minCoins, minSum
+        
+
 
 ##############################################################
 # changeDP(coinValueList, value)
@@ -168,7 +185,7 @@ def runAlgorithm(algorithm, note):
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
-runAlgorithm('changeSlow', "Brute Force/Recursive Algorithm Results:")
+runAlgorithm(changeSlow2, "Brute Force/Recursive Algorithm Results:")
 
 
 outFile.close()
