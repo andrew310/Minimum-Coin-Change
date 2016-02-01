@@ -5,172 +5,172 @@ Dynamic Programming results:
  
 value needed: 2010
 ([0, 0, 1, 0, 40], 41)
-Seconds Taken: 0.00430134810927
+Seconds Taken: 0.00639
  
 value needed: 2015
 ([0, 1, 1, 0, 40], 42)
-Seconds Taken: 0.00408752090161
+Seconds Taken: 0.007716
  
 value needed: 2020
 ([0, 0, 2, 0, 40], 42)
-Seconds Taken: 0.00402308763637
+Seconds Taken: 0.005931
  
 value needed: 2025
 ([0, 0, 0, 1, 40], 41)
-Seconds Taken: 0.00428310152088
+Seconds Taken: 0.005888
  
 value needed: 2030
 ([0, 1, 0, 1, 40], 42)
-Seconds Taken: 0.00421752784387
+Seconds Taken: 0.005934
  
 value needed: 2035
 ([0, 0, 1, 1, 40], 42)
-Seconds Taken: 0.00401510475395
+Seconds Taken: 0.005906
  
 value needed: 2040
 ([0, 1, 1, 1, 40], 43)
-Seconds Taken: 0.00397262441536
+Seconds Taken: 0.005925
  
 value needed: 2050
 ([0, 0, 0, 0, 41], 41)
-Seconds Taken: 0.00409607398992
+Seconds Taken: 0.006555
  
 value needed: 2080
 ([0, 1, 0, 1, 41], 43)
-Seconds Taken: 0.00404561076891
+Seconds Taken: 0.006051
  
 value needed: 2200
 ([0, 0, 0, 0, 44], 44)
-Seconds Taken: 0.00459243821463
+Seconds Taken: 0.006413
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
  
 value needed: 2001
 ([1, 1, 1, 1, 0, 0, 33], 37)
-Seconds Taken: 0.00580298531292
+Seconds Taken: 0.008879
  
 value needed: 2002
 ([0, 2, 1, 1, 0, 0, 33], 37)
-Seconds Taken: 0.00571289278276
+Seconds Taken: 0.0085
  
 value needed: 2003
 ([1, 2, 1, 1, 0, 0, 33], 38)
-Seconds Taken: 0.00577875156272
+Seconds Taken: 0.014131
  
 value needed: 2004
 ([0, 0, 0, 0, 1, 0, 33], 34)
-Seconds Taken: 0.00564788931163
+Seconds Taken: 0.009197
  
 value needed: 2005
 ([1, 0, 0, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00575850925373
+Seconds Taken: 0.008553
  
 value needed: 2006
 ([0, 1, 0, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00579671304816
+Seconds Taken: 0.00989
  
 value needed: 2007
 ([1, 1, 0, 0, 1, 0, 33], 36)
-Seconds Taken: 0.00559143892881
+Seconds Taken: 0.009858
  
 value needed: 2008
 ([0, 2, 0, 0, 1, 0, 33], 36)
-Seconds Taken: 0.00592244344627
+Seconds Taken: 0.010033
  
 value needed: 2009
 ([1, 2, 0, 0, 1, 0, 33], 37)
-Seconds Taken: 0.00576193048905
+Seconds Taken: 0.009153
  
 value needed: 2010
 ([0, 0, 1, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00568153145897
+Seconds Taken: 0.00986
  
 
  denominations: [1, 6, 13, 37, 150]
  
 value needed: 2001
 ([1, 0, 1, 1, 13], 16)
-Seconds Taken: 0.00383919623778
+Seconds Taken: 0.00662
  
 value needed: 2002
 ([2, 0, 1, 1, 13], 17)
-Seconds Taken: 0.00380669450222
+Seconds Taken: 0.006626
  
 value needed: 2003
 ([3, 0, 1, 1, 13], 18)
-Seconds Taken: 0.0037810352373
+Seconds Taken: 0.006636
  
 value needed: 2004
 ([4, 0, 1, 1, 13], 19)
-Seconds Taken: 0.00396065009173
+Seconds Taken: 0.00664
  
 value needed: 2005
 ([5, 0, 1, 1, 13], 17)
-Seconds Taken: 0.00384803442903
+Seconds Taken: 0.006646
  
 value needed: 2006
 ([0, 1, 1, 1, 13], 16)
-Seconds Taken: 0.00387540431161
+Seconds Taken: 0.00665
  
 value needed: 2007
 ([1, 1, 1, 1, 13], 17)
-Seconds Taken: 0.00383520479657
+Seconds Taken: 0.006683
  
 value needed: 2008
 ([2, 1, 1, 1, 13], 18)
-Seconds Taken: 0.0038340643848
+Seconds Taken: 0.007312
  
 value needed: 2009
 ([3, 1, 1, 1, 13], 19)
-Seconds Taken: 0.00387340859101
+Seconds Taken: 0.010416
  
 value needed: 2010
 ([4, 1, 1, 1, 13], 20)
-Seconds Taken: 0.00381923903173
+Seconds Taken: 0.00652
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
  
 value needed: 2001
 ([1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 66], 68)
-Seconds Taken: 0.0119614939964
+Seconds Taken: 0.018122
  
 value needed: 2002
 ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 67)
-Seconds Taken: 0.0122172313368
+Seconds Taken: 0.017928
  
 value needed: 2003
 ([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 68)
-Seconds Taken: 0.0122026910867
+Seconds Taken: 0.020053
  
 value needed: 2004
 ([0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 67)
-Seconds Taken: 0.0139104577185
+Seconds Taken: 0.017926
  
 value needed: 2005
 ([1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 68)
-Seconds Taken: 0.0128592831657
+Seconds Taken: 0.017948
  
 value needed: 2006
 ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 66], 67)
-Seconds Taken: 0.0121510874539
+Seconds Taken: 0.018074
  
 value needed: 2007
 ([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 66], 68)
-Seconds Taken: 0.012493781192
+Seconds Taken: 0.017987
  
 value needed: 2008
 ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 66], 67)
-Seconds Taken: 0.0120273527764
+Seconds Taken: 0.018064
  
 value needed: 2009
 ([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 66], 68)
-Seconds Taken: 0.0119794554819
+Seconds Taken: 0.019917
  
 value needed: 2010
 ([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67], 67)
-Seconds Taken: 0.0120738245562
+Seconds Taken: 0.020825
  
 
 Greedy Algorithm Results:
@@ -179,172 +179,172 @@ Greedy Algorithm Results:
  
 value needed: 2010
 ({25: 0, 50: 40, 1: 0, 10: 1, 5: 0}, 41)
-Seconds Taken: 7.41267653215e-06
+Seconds Taken: 1.19999999999e-05
  
 value needed: 2015
 ({25: 0, 50: 40, 1: 0, 10: 1, 5: 1}, 42)
-Seconds Taken: 4.56164709672e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2020
 ({25: 0, 50: 40, 1: 0, 10: 2, 5: 0}, 42)
-Seconds Taken: 3.99144120961e-06
+Seconds Taken: 5.99999999995e-06
  
 value needed: 2025
 ({25: 1, 50: 40, 1: 0, 10: 0, 5: 0}, 41)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2030
 ({25: 1, 50: 40, 1: 0, 10: 0, 5: 1}, 42)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 6.00000000006e-06
  
 value needed: 2035
 ({25: 1, 50: 40, 1: 0, 10: 1, 5: 0}, 42)
-Seconds Taken: 6.27226475797e-06
+Seconds Taken: 5.99999999995e-06
  
 value needed: 2040
 ({25: 1, 50: 40, 1: 0, 10: 1, 5: 1}, 43)
-Seconds Taken: 1.28296324595e-05
+Seconds Taken: 5.99999999995e-06
  
 value needed: 2050
 ({25: 0, 50: 41, 1: 0, 10: 0, 5: 0}, 41)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 4.99999999992e-06
  
 value needed: 2080
 ({25: 1, 50: 41, 1: 0, 10: 0, 5: 1}, 43)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 8.00000000001e-06
  
 value needed: 2200
 ({25: 0, 50: 44, 1: 0, 10: 0, 5: 0}, 44)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 6.99999999998e-06
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
  
 value needed: 2001
 ({1: 1, 2: 1, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 37)
-Seconds Taken: 5.7020588709e-06
+Seconds Taken: 9.99999999995e-06
  
 value needed: 2002
 ({1: 0, 2: 2, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 37)
-Seconds Taken: 4.56164709672e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2003
 ({1: 1, 2: 2, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 38)
-Seconds Taken: 4.27654415319e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2004
 ({1: 0, 2: 0, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 34)
-Seconds Taken: 4.27654415319e-06
+Seconds Taken: 8.00000000001e-06
  
 value needed: 2005
 ({1: 1, 2: 0, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 4.27654415314e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2006
 ({1: 0, 2: 1, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 4.27654415314e-06
+Seconds Taken: 6.00000000006e-06
  
 value needed: 2007
 ({1: 1, 2: 1, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 36)
-Seconds Taken: 3.99144120961e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2008
 ({1: 0, 2: 2, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 36)
-Seconds Taken: 4.27654415319e-06
+Seconds Taken: 6.00000000006e-06
  
 value needed: 2009
 ({1: 1, 2: 2, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 37)
-Seconds Taken: 4.27654415319e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2010
 ({1: 0, 2: 0, 6: 1, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 3.99144120966e-06
+Seconds Taken: 8.00000000001e-06
  
 
  denominations: [1, 6, 13, 37, 150]
  
 value needed: 2001
 ({1: 1, 6: 0, 37: 1, 150: 13, 13: 1}, 16)
-Seconds Taken: 4.84675004025e-06
+Seconds Taken: 5.99999999995e-06
  
 value needed: 2002
 ({1: 2, 6: 0, 37: 1, 150: 13, 13: 1}, 17)
-Seconds Taken: 3.99144120961e-06
+Seconds Taken: 5.00000000003e-06
  
 value needed: 2003
 ({1: 3, 6: 0, 37: 1, 150: 13, 13: 1}, 18)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 5.99999999995e-06
  
 value needed: 2004
 ({1: 4, 6: 0, 37: 1, 150: 13, 13: 1}, 19)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 4.99999999992e-06
  
 value needed: 2005
 ({1: 5, 6: 0, 37: 1, 150: 13, 13: 1}, 20)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 6.00000000006e-06
  
 value needed: 2006
 ({1: 0, 6: 1, 37: 1, 150: 13, 13: 1}, 16)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 7.00000000009e-06
  
 value needed: 2007
 ({1: 1, 6: 1, 37: 1, 150: 13, 13: 1}, 17)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 5.00000000003e-06
  
 value needed: 2008
 ({1: 2, 6: 1, 37: 1, 150: 13, 13: 1}, 18)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 4.99999999992e-06
  
 value needed: 2009
 ({1: 3, 6: 1, 37: 1, 150: 13, 13: 1}, 19)
-Seconds Taken: 3.13613237901e-06
+Seconds Taken: 6.99999999998e-06
  
 value needed: 2010
 ({1: 4, 6: 1, 37: 1, 150: 13, 13: 1}, 20)
-Seconds Taken: 3.42123532254e-06
+Seconds Taken: 4.99999999992e-06
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
  
 value needed: 2001
 ({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 7.98288241927e-06
+Seconds Taken: 1.29999999999e-05
  
 value needed: 2002
 ({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 67)
-Seconds Taken: 6.27226475802e-06
+Seconds Taken: 1.1e-05
  
 value needed: 2003
 ({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 6.27226475802e-06
+Seconds Taken: 9.99999999995e-06
  
 value needed: 2004
 ({1: 0, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 5.98716181444e-06
+Seconds Taken: 9.99999999995e-06
  
 value needed: 2005
 ({1: 1, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 69)
-Seconds Taken: 6.27226475797e-06
+Seconds Taken: 9.00000000004e-06
  
 value needed: 2006
 ({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 1, 28: 0, 30: 66}, 67)
-Seconds Taken: 6.27226475802e-06
+Seconds Taken: 9.00000000004e-06
  
 value needed: 2007
 ({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 1, 28: 0, 30: 66}, 68)
-Seconds Taken: 6.55736770155e-06
+Seconds Taken: 1.1e-05
  
 value needed: 2008
 ({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 1, 30: 66}, 67)
-Seconds Taken: 6.27226475797e-06
+Seconds Taken: 1.00000000001e-05
  
 value needed: 2009
 ({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 1, 30: 66}, 68)
-Seconds Taken: 6.27226475797e-06
+Seconds Taken: 9.99999999995e-06
  
 value needed: 2010
 ({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 67}, 67)
-Seconds Taken: 9.69350008057e-06
+Seconds Taken: 1.1e-05
  
 
 Brute Force/Recursive Algorithm Results:
@@ -354,52 +354,52 @@ Brute Force/Recursive Algorithm Results:
 value needed: 2010
 Minimum # of coins needed: 41
 Coin Count: {'1': 0, '10': 1, '5': 0, '50': 40, '25': 0}
-Seconds Taken: 4.44760591931e-05
+Seconds Taken: 6.8e-05
  
 value needed: 2015
 Minimum # of coins needed: 202
 Coin Count: {'1': 0, '10': 201, '5': 1}
-Seconds Taken: 0.000163363986652
+Seconds Taken: 0.000355
  
 value needed: 2020
 Minimum # of coins needed: 404
 Coin Count: {'1': 0, '5': 404}
-Seconds Taken: 0.000341553326367
+Seconds Taken: 0.000561
  
 value needed: 2025
 Minimum # of coins needed: 405
 Coin Count: {'1': 0, '5': 405}
-Seconds Taken: 0.000288809281811
+Seconds Taken: 0.000472
  
 value needed: 2030
 Minimum # of coins needed: 406
 Coin Count: {'1': 0, '5': 406}
-Seconds Taken: 0.000288239075924
+Seconds Taken: 0.000475
  
 value needed: 2035
 Minimum # of coins needed: 407
 Coin Count: {'1': 0, '5': 407}
-Seconds Taken: 0.000316749370279
+Seconds Taken: 0.000477
  
 value needed: 2040
 Minimum # of coins needed: 408
 Coin Count: {'1': 0, '5': 408}
-Seconds Taken: 0.000289094384755
+Seconds Taken: 0.000479
  
 value needed: 2050
 Minimum # of coins needed: 410
 Coin Count: {'1': 0, '5': 410}
-Seconds Taken: 0.000291375208303
+Seconds Taken: 0.000482
  
 value needed: 2080
 Minimum # of coins needed: 416
 Coin Count: {'1': 0, '5': 416}
-Seconds Taken: 0.000297932576005
+Seconds Taken: 0.000488
  
 value needed: 2200
 Minimum # of coins needed: 440
 Coin Count: {'1': 0, '5': 440}
-Seconds Taken: 0.000342693738141
+Seconds Taken: 0.000528
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
@@ -407,52 +407,52 @@ Seconds Taken: 0.000342693738141
 value needed: 2001
 Minimum # of coins needed: 37
 Coin Count: {'24': 0, '60': 33, '12': 1, '48': 0, '1': 1, '2': 1, '6': 1}
-Seconds Taken: 4.44760591931e-05
+Seconds Taken: 6.7e-05
  
 value needed: 2002
 Minimum # of coins needed: 2002
 Coin Count: {'1': 2002}
-Seconds Taken: 0.00221268394486
+Seconds Taken: 0.003948
  
 value needed: 2003
 Minimum # of coins needed: 2003
 Coin Count: {'1': 2003}
-Seconds Taken: 0.00154924939523
+Seconds Taken: 0.00239
  
 value needed: 2004
 Minimum # of coins needed: 2004
 Coin Count: {'1': 2004}
-Seconds Taken: 0.00150163720365
+Seconds Taken: 0.002398
  
 value needed: 2005
 Minimum # of coins needed: 2005
 Coin Count: {'1': 2005}
-Seconds Taken: 0.00151076049785
+Seconds Taken: 0.00239
  
 value needed: 2006
 Minimum # of coins needed: 2006
 Coin Count: {'1': 2006}
-Seconds Taken: 0.00152900708623
+Seconds Taken: 0.002396
  
 value needed: 2007
 Minimum # of coins needed: 2007
 Coin Count: {'1': 2007}
-Seconds Taken: 0.00153299852744
+Seconds Taken: 0.002392
  
 value needed: 2008
 Minimum # of coins needed: 2008
 Coin Count: {'1': 2008}
-Seconds Taken: 0.00160855080748
+Seconds Taken: 0.002493
  
 value needed: 2009
 Minimum # of coins needed: 2009
 Coin Count: {'1': 2009}
-Seconds Taken: 0.00154525795402
+Seconds Taken: 0.002391
  
 value needed: 2010
 Minimum # of coins needed: 2010
 Coin Count: {'1': 2010}
-Seconds Taken: 0.00152957729212
+Seconds Taken: 0.002404
  
 
  denominations: [1, 6, 13, 37, 150]
@@ -460,52 +460,52 @@ Seconds Taken: 0.00152957729212
 value needed: 2001
 Minimum # of coins needed: 16
 Coin Count: {'1': 1, '150': 13, '13': 1, '37': 1, '6': 0}
-Seconds Taken: 2.22380295965e-05
+Seconds Taken: 3.40000000001e-05
  
 value needed: 2002
 Minimum # of coins needed: 2002
 Coin Count: {'1': 2002}
-Seconds Taken: 0.00153613465982
+Seconds Taken: 0.002391
  
 value needed: 2003
 Minimum # of coins needed: 2003
 Coin Count: {'1': 2003}
-Seconds Taken: 0.00150363292426
+Seconds Taken: 0.002391
  
 value needed: 2004
 Minimum # of coins needed: 2004
 Coin Count: {'1': 2004}
-Seconds Taken: 0.00149137349769
+Seconds Taken: 0.002387
  
 value needed: 2005
 Minimum # of coins needed: 2005
 Coin Count: {'1': 2005}
-Seconds Taken: 0.00155381104232
+Seconds Taken: 0.002487
  
 value needed: 2006
 Minimum # of coins needed: 2006
 Coin Count: {'1': 2006}
-Seconds Taken: 0.00148310551232
+Seconds Taken: 0.002393
  
 value needed: 2007
 Minimum # of coins needed: 2007
 Coin Count: {'1': 2007}
-Seconds Taken: 0.00153128790978
+Seconds Taken: 0.002397
  
 value needed: 2008
 Minimum # of coins needed: 2008
 Coin Count: {'1': 2008}
-Seconds Taken: 0.00150562864486
+Seconds Taken: 0.002395
  
 value needed: 2009
 Minimum # of coins needed: 2009
 Coin Count: {'1': 2009}
-Seconds Taken: 0.00147654814462
+Seconds Taken: 0.002393
  
 value needed: 2010
 Minimum # of coins needed: 2010
 Coin Count: {'1': 2010}
-Seconds Taken: 0.00148823736531
+Seconds Taken: 0.002397
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
@@ -513,50 +513,50 @@ Seconds Taken: 0.00148823736531
 value needed: 2001
 Minimum # of coins needed: 68
 Coin Count: {'10': 0, '26': 0, '12': 0, '20': 1, '22': 0, '16': 0, '18': 0, '30': 66, '28': 0, '1': 1, '2': 0, '4': 0, '6': 0, '8': 0}
-Seconds Taken: 0.000103207265563
+Seconds Taken: 0.000158
  
 value needed: 2002
 Minimum # of coins needed: 2002
 Coin Count: {'1': 2002}
-Seconds Taken: 0.00159201483676
+Seconds Taken: 0.002485
  
 value needed: 2003
 Minimum # of coins needed: 2003
 Coin Count: {'1': 2003}
-Seconds Taken: 0.00154326223341
+Seconds Taken: 0.002392
  
 value needed: 2004
 Minimum # of coins needed: 2004
 Coin Count: {'1': 2004}
-Seconds Taken: 0.00157519376309
+Seconds Taken: 0.00239
  
 value needed: 2005
 Minimum # of coins needed: 2005
 Coin Count: {'1': 2005}
-Seconds Taken: 0.00148253530644
+Seconds Taken: 0.002388
  
 value needed: 2006
 Minimum # of coins needed: 2006
 Coin Count: {'1': 2006}
-Seconds Taken: 0.00152843688035
+Seconds Taken: 0.00239
  
 value needed: 2007
 Minimum # of coins needed: 2007
 Coin Count: {'1': 2007}
-Seconds Taken: 0.00153014749801
+Seconds Taken: 0.002393
  
 value needed: 2008
 Minimum # of coins needed: 2008
 Coin Count: {'1': 2008}
-Seconds Taken: 0.00159287014559
+Seconds Taken: 0.002493
  
 value needed: 2009
 Minimum # of coins needed: 2009
 Coin Count: {'1': 2009}
-Seconds Taken: 0.00157804479252
+Seconds Taken: 0.002396
  
 value needed: 2010
 Minimum # of coins needed: 2010
 Coin Count: {'1': 2010}
-Seconds Taken: 0.00150363292426
+Seconds Taken: 0.002395
  
