@@ -2,6 +2,7 @@ __author__ = 'Andrew.Brown'
 
 from ast import literal_eval
 import sys
+import time
 
 sys.setrecursionlimit(10000) #for testing on changeslow
 
@@ -189,19 +190,28 @@ def testHelper(algorithm, note):
         denoms = literal_eval(line1)
         valueNeeded = literal_eval(line2)
         outFile.write("\n denominations: " + str(denoms) + "\n \n")
+        seconds = 0
         for v in valueNeeded:
             if algorithm == 'changeSlow':
                 coinsDict = {}
                 outFile.write("value needed: " + str(v) + "\n")
                 outFile.write("Minimum # of coins needed: ")
+                start = time.clock()
                 outFile.write(str(changeSlow(denoms, v, coinsDict, True)))
+                end = time.clock()
+                seconds = end - start
                 outFile.write("\nCoin Count: ")
                 outFile.write(str(coinsDict))
                 outFile.write("\n")
             else:
                 outFile.write("value needed: " + str(v) + "\n")
+                start = time.clock()
                 outFile.write(str(algorithm(denoms, v)))
+                end = time.clock()
+                seconds = end - start
                 outFile.write("\n")
+            outFile.write("Seconds Taken: " + str(seconds) + "\n \n")
+
     inFile.close()
 
 testHelper(changeDP, "Dynamic Programming results:")
