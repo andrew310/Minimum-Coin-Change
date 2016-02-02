@@ -4,7 +4,7 @@ from ast import literal_eval
 import sys
 import time
 
-sys.setrecursionlimit(10000) #for testing on changeslow
+sys.setrecursionlimit(85) #for testing on changeslow
 
 def changeSlow(coinValueList, total, coinsDict, build):
     if build == True:
@@ -27,6 +27,11 @@ def buildDict(coinValueList, coinsDict):
 def changeSlow2(coinArray, value):
     minSum = value
     minCoins = [0] * len(coinArray)
+
+    if value in coinArray:
+        minCoins = [0 for c in coinArray]
+        minCoins[coinArray.index(value)] +=1
+        return minCoins, sum(minCoins)
 
     for i in range(0, len(coinArray)):
         if(coinArray[i] <= value):
