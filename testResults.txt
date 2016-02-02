@@ -3,520 +3,520 @@ Dynamic Programming results:
 
  denominations: [1, 5, 10, 25, 50]
  
-value needed: 2010
-([0, 0, 1, 0, 40], 41)
-Seconds Taken: 0.00424378954499
+value needed: 2
+([2, 0, 0, 0, 0], 2)
+Seconds Taken: 2.05261888512e-05
  
-value needed: 2015
-([0, 1, 1, 0, 40], 42)
-Seconds Taken: 0.00392467145269
+value needed: 5
+([0, 1, 0, 0, 0], 1)
+Seconds Taken: 1.9243302048e-05
  
-value needed: 2020
-([0, 0, 2, 0, 40], 42)
-Seconds Taken: 0.00383519009817
+value needed: 10
+([0, 0, 1, 0, 0], 1)
+Seconds Taken: 2.50162926624e-05
  
-value needed: 2025
-([0, 0, 0, 1, 40], 41)
-Seconds Taken: 0.00387303525886
+value needed: 15
+([0, 1, 1, 0, 0], 2)
+Seconds Taken: 4.00902126e-05
  
-value needed: 2030
-([0, 1, 0, 1, 40], 42)
-Seconds Taken: 0.00391793629697
+value needed: 20
+([0, 0, 2, 0, 0], 2)
+Seconds Taken: 4.93911419232e-05
  
-value needed: 2035
-([0, 0, 1, 1, 40], 42)
-Seconds Taken: 0.00396668599549
+value needed: 25
+([0, 0, 0, 1, 0], 1)
+Seconds Taken: 6.92758873728e-05
  
-value needed: 2040
-([0, 1, 1, 1, 40], 43)
-Seconds Taken: 0.00395000846705
+value needed: 30
+([0, 1, 0, 1, 0], 2)
+Seconds Taken: 0.00013245806243
  
-value needed: 2050
-([0, 0, 0, 0, 41], 41)
-Seconds Taken: 0.00394263186793
+value needed: 35
+([0, 0, 1, 1, 0], 2)
+Seconds Taken: 6.44650618608e-05
  
-value needed: 2080
-([0, 1, 0, 1, 41], 43)
-Seconds Taken: 0.00402762311865
+value needed: 40
+([0, 1, 1, 1, 0], 3)
+Seconds Taken: 8.85191894208e-05
  
-value needed: 2200
-([0, 0, 0, 0, 44], 44)
-Seconds Taken: 0.00427329594146
+value needed: 45
+([0, 0, 2, 1, 0], 3)
+Seconds Taken: 0.00010840393487
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
  
-value needed: 2001
-([1, 1, 1, 1, 0, 0, 33], 37)
-Seconds Taken: 0.00556772872589
+value needed: 11
+([1, 2, 1, 0, 0, 0, 0], 4)
+Seconds Taken: 3.72037172928e-05
  
-value needed: 2002
-([0, 2, 1, 1, 0, 0, 33], 37)
-Seconds Taken: 0.0055324493388
+value needed: 12
+([0, 0, 0, 1, 0, 0, 0], 1)
+Seconds Taken: 4.6504646616e-05
  
-value needed: 2003
-([1, 2, 1, 1, 0, 0, 33], 38)
-Seconds Taken: 0.00566747317484
+value needed: 13
+([1, 0, 0, 1, 0, 0, 0], 2)
+Seconds Taken: 7.50488779872e-05
  
-value needed: 2004
-([0, 0, 0, 0, 1, 0, 33], 34)
-Seconds Taken: 0.00555810707486
+value needed: 14
+([0, 1, 0, 1, 0, 0, 0], 2)
+Seconds Taken: 5.38812457344e-05
  
-value needed: 2005
-([1, 0, 0, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00567933987777
+value needed: 15
+([1, 1, 0, 1, 0, 0, 0], 3)
+Seconds Taken: 8.6594859216e-05
  
-value needed: 2006
-([0, 1, 0, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00560461172148
+value needed: 16
+([0, 2, 0, 1, 0, 0, 0], 3)
+Seconds Taken: 5.58055759392e-05
  
-value needed: 2007
-([1, 1, 0, 0, 1, 0, 33], 36)
-Seconds Taken: 0.00555906923997
+value needed: 17
+([1, 2, 0, 1, 0, 0, 0], 4)
+Seconds Taken: 4.90704202224e-05
  
-value needed: 2008
-([0, 2, 0, 0, 1, 0, 33], 36)
-Seconds Taken: 0.00560012161767
+value needed: 18
+([0, 0, 1, 1, 0, 0, 0], 2)
+Seconds Taken: 5.19569155296e-05
  
-value needed: 2009
-([1, 2, 0, 0, 1, 0, 33], 37)
-Seconds Taken: 0.00557574676841
+value needed: 19
+([1, 0, 1, 1, 0, 0, 0], 3)
+Seconds Taken: 7.56903213888e-05
  
-value needed: 2010
-([0, 0, 1, 0, 1, 0, 33], 35)
-Seconds Taken: 0.00561487481591
+value needed: 20
+([0, 1, 1, 1, 0, 0, 0], 3)
+Seconds Taken: 0.00010006517065
  
 
  denominations: [1, 6, 13, 37, 150]
  
-value needed: 2001
-([1, 0, 1, 1, 13], 16)
-Seconds Taken: 0.00406129889723
+value needed: 16
+([3, 0, 1, 0, 0], 4)
+Seconds Taken: 3.5279387088e-05
  
-value needed: 2002
-([2, 0, 1, 1, 13], 17)
-Seconds Taken: 0.00382204050843
+value needed: 17
+([4, 0, 1, 0, 0], 5)
+Seconds Taken: 7.28038260816e-05
  
-value needed: 2003
-([3, 0, 1, 1, 13], 18)
-Seconds Taken: 0.00383903875858
+value needed: 18
+([0, 3, 0, 0, 0], 3)
+Seconds Taken: 6.79930005696e-05
  
-value needed: 2004
-([4, 0, 1, 1, 13], 19)
-Seconds Taken: 0.00381241885741
+value needed: 19
+([0, 1, 1, 0, 0], 2)
+Seconds Taken: 7.72939298928e-05
  
-value needed: 2005
-([5, 0, 1, 1, 13], 17)
-Seconds Taken: 0.00394359403304
+value needed: 20
+([1, 1, 1, 0, 0], 3)
+Seconds Taken: 7.28038260816e-05
  
-value needed: 2006
-([0, 1, 1, 1, 13], 16)
-Seconds Taken: 0.00379862782428
+value needed: 21
+([2, 1, 1, 0, 0], 4)
+Seconds Taken: 4.07316560016e-05
  
-value needed: 2007
-([1, 1, 1, 1, 13], 17)
-Seconds Taken: 0.0038483396879
+value needed: 22
+([3, 1, 1, 0, 0], 5)
+Seconds Taken: 4.52217598128e-05
  
-value needed: 2008
-([2, 1, 1, 1, 13], 18)
-Seconds Taken: 0.00388329835329
+value needed: 23
+([4, 1, 1, 0, 0], 6)
+Seconds Taken: 5.51641325376e-05
  
-value needed: 2009
-([3, 1, 1, 1, 13], 19)
-Seconds Taken: 0.00385443340021
+value needed: 24
+([0, 4, 0, 0, 0], 4)
+Seconds Taken: 5.48434108368e-05
  
-value needed: 2010
-([4, 1, 1, 1, 13], 20)
-Seconds Taken: 0.00386854515505
+value needed: 25
+([0, 2, 1, 0, 0], 3)
+Seconds Taken: 5.74091844432e-05
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
  
-value needed: 2001
-([1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 66], 68)
-Seconds Taken: 0.0117974270422
+value needed: 16
+([0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+Seconds Taken: 0.000138551774746
  
-value needed: 2002
-([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 67)
-Seconds Taken: 0.0118096144669
+value needed: 17
+([1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 2)
+Seconds Taken: 0.000141117548352
  
-value needed: 2003
-([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 68)
-Seconds Taken: 0.0117053799141
+value needed: 18
+([0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 1)
+Seconds Taken: 0.000139193218147
  
-value needed: 2004
-([0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 67)
-Seconds Taken: 0.0119581086143
+value needed: 19
+([1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0], 2)
+Seconds Taken: 0.00013245806243
  
-value needed: 2005
-([1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 66], 68)
-Seconds Taken: 0.0118586848871
+value needed: 20
+([0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0], 1)
+Seconds Taken: 0.000115139090587
  
-value needed: 2006
-([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 66], 67)
-Seconds Taken: 0.0116370661918
+value needed: 21
+([1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0], 2)
+Seconds Taken: 0.00010808321317
  
-value needed: 2007
-([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 66], 68)
-Seconds Taken: 0.0116957582631
+value needed: 22
+([0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], 1)
+Seconds Taken: 0.000119629194398
  
-value needed: 2008
-([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 66], 67)
-Seconds Taken: 0.0121563146254
+value needed: 23
+([1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], 2)
+Seconds Taken: 0.000124760741611
  
-value needed: 2009
-([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 66], 68)
-Seconds Taken: 0.0120257808932
+value needed: 24
+([0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0], 2)
+Seconds Taken: 0.000162926624006
  
-value needed: 2010
-([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67], 67)
-Seconds Taken: 0.0116098048473
+value needed: 25
+([1, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0], 3)
+Seconds Taken: 0.00014817342577
  
 
 Greedy Algorithm Results:
 
  denominations: [1, 5, 10, 25, 50]
  
-value needed: 2010
-({25: 0, 50: 40, 1: 0, 10: 1, 5: 0}, 41)
-Seconds Taken: 7.69732081923e-06
+value needed: 2
+({25: 0, 50: 0, 1: 2, 10: 0, 5: 0}, 2)
+Seconds Taken: 1.69982501424e-05
  
-value needed: 2015
-({25: 0, 50: 40, 1: 0, 10: 1, 5: 1}, 42)
-Seconds Taken: 4.49010381121e-06
+value needed: 5
+({25: 0, 50: 0, 1: 0, 10: 0, 5: 1}, 1)
+Seconds Taken: 1.34703114336e-05
  
-value needed: 2020
-({25: 0, 50: 40, 1: 0, 10: 2, 5: 0}, 42)
+value needed: 10
+({25: 0, 50: 0, 1: 0, 10: 1, 5: 0}, 1)
 Seconds Taken: 4.1693821104e-06
  
-value needed: 2025
-({25: 1, 50: 40, 1: 0, 10: 0, 5: 0}, 41)
-Seconds Taken: 4.1693821104e-06
+value needed: 15
+({25: 0, 50: 0, 1: 0, 10: 1, 5: 1}, 2)
+Seconds Taken: 3.8486604096e-06
  
-value needed: 2030
-({25: 1, 50: 40, 1: 0, 10: 0, 5: 1}, 42)
-Seconds Taken: 3.84866040959e-06
+value needed: 20
+({25: 0, 50: 0, 1: 0, 10: 2, 5: 0}, 2)
+Seconds Taken: 1.2828868032e-05
  
-value needed: 2035
-({25: 1, 50: 40, 1: 0, 10: 1, 5: 0}, 42)
-Seconds Taken: 6.09371231519e-06
+value needed: 25
+({25: 1, 50: 0, 1: 0, 10: 0, 5: 0}, 1)
+Seconds Taken: 3.8486604096e-06
  
-value needed: 2040
-({25: 1, 50: 40, 1: 0, 10: 1, 5: 1}, 43)
-Seconds Taken: 4.1693821104e-06
+value needed: 30
+({25: 1, 50: 0, 1: 0, 10: 0, 5: 1}, 2)
+Seconds Taken: 8.46705290112e-05
  
-value needed: 2050
-({25: 0, 50: 41, 1: 0, 10: 0, 5: 0}, 41)
-Seconds Taken: 4.1693821104e-06
+value needed: 35
+({25: 1, 50: 0, 1: 0, 10: 1, 5: 0}, 2)
+Seconds Taken: 5.1315472128e-06
  
-value needed: 2080
-({25: 1, 50: 41, 1: 0, 10: 0, 5: 1}, 43)
-Seconds Taken: 4.1693821104e-06
+value needed: 40
+({25: 1, 50: 0, 1: 0, 10: 1, 5: 1}, 3)
+Seconds Taken: 1.2828868032e-05
  
-value needed: 2200
-({25: 0, 50: 44, 1: 0, 10: 0, 5: 0}, 44)
-Seconds Taken: 4.1693821104e-06
+value needed: 45
+({25: 1, 50: 0, 1: 0, 10: 2, 5: 0}, 3)
+Seconds Taken: 3.5279387088e-06
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
  
-value needed: 2001
-({1: 1, 2: 1, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 37)
-Seconds Taken: 6.414434016e-06
+value needed: 11
+({1: 1, 2: 2, 6: 1, 12: 0, 48: 0, 24: 0, 60: 0}, 4)
+Seconds Taken: 6.0937123152e-06
  
-value needed: 2002
-({1: 0, 2: 2, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 37)
-Seconds Taken: 4.81082551201e-06
+value needed: 12
+({1: 0, 2: 0, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 1)
+Seconds Taken: 4.810825512e-06
  
-value needed: 2003
-({1: 1, 2: 2, 6: 1, 12: 1, 48: 0, 24: 0, 60: 33}, 38)
-Seconds Taken: 4.81082551201e-06
+value needed: 13
+({1: 1, 2: 0, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 2)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2004
-({1: 0, 2: 0, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 34)
-Seconds Taken: 4.81082551196e-06
+value needed: 14
+({1: 0, 2: 1, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 2)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2005
-({1: 1, 2: 0, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 4.81082551196e-06
+value needed: 15
+({1: 1, 2: 1, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 3)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2006
-({1: 0, 2: 1, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 4.81082551196e-06
+value needed: 16
+({1: 0, 2: 2, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 3)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2007
-({1: 1, 2: 1, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 36)
-Seconds Taken: 4.49010381121e-06
+value needed: 17
+({1: 1, 2: 2, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0}, 4)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2008
-({1: 0, 2: 2, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 36)
-Seconds Taken: 4.81082551201e-06
+value needed: 18
+({1: 0, 2: 0, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0}, 2)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2009
-({1: 1, 2: 2, 6: 0, 12: 0, 48: 0, 24: 1, 60: 33}, 37)
-Seconds Taken: 4.81082551201e-06
+value needed: 19
+({1: 1, 2: 0, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0}, 3)
+Seconds Taken: 4.4901038112e-06
  
-value needed: 2010
-({1: 0, 2: 0, 6: 1, 12: 0, 48: 0, 24: 1, 60: 33}, 35)
-Seconds Taken: 4.49010381121e-06
+value needed: 20
+({1: 0, 2: 1, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0}, 3)
+Seconds Taken: 4.4901038112e-06
  
 
  denominations: [1, 6, 13, 37, 150]
  
-value needed: 2001
-({1: 1, 6: 0, 37: 1, 150: 13, 13: 1}, 16)
-Seconds Taken: 4.81082551201e-06
- 
-value needed: 2002
-({1: 2, 6: 0, 37: 1, 150: 13, 13: 1}, 17)
+value needed: 16
+({1: 3, 6: 0, 37: 0, 150: 0, 13: 1}, 4)
 Seconds Taken: 4.1693821104e-06
  
-value needed: 2003
-({1: 3, 6: 0, 37: 1, 150: 13, 13: 1}, 18)
-Seconds Taken: 3.84866040964e-06
+value needed: 17
+({1: 4, 6: 0, 37: 0, 150: 0, 13: 1}, 5)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2004
-({1: 4, 6: 0, 37: 1, 150: 13, 13: 1}, 19)
-Seconds Taken: 3.84866040959e-06
+value needed: 18
+({1: 5, 6: 0, 37: 0, 150: 0, 13: 1}, 6)
+Seconds Taken: 3.207217008e-06
  
-value needed: 2005
-({1: 5, 6: 0, 37: 1, 150: 13, 13: 1}, 20)
-Seconds Taken: 3.84866040959e-06
+value needed: 19
+({1: 0, 6: 1, 37: 0, 150: 0, 13: 1}, 2)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2006
-({1: 0, 6: 1, 37: 1, 150: 13, 13: 1}, 16)
-Seconds Taken: 4.1693821104e-06
+value needed: 20
+({1: 1, 6: 1, 37: 0, 150: 0, 13: 1}, 3)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2007
-({1: 1, 6: 1, 37: 1, 150: 13, 13: 1}, 17)
-Seconds Taken: 3.84866040959e-06
+value needed: 21
+({1: 2, 6: 1, 37: 0, 150: 0, 13: 1}, 4)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2008
-({1: 2, 6: 1, 37: 1, 150: 13, 13: 1}, 18)
-Seconds Taken: 3.84866040959e-06
+value needed: 22
+({1: 3, 6: 1, 37: 0, 150: 0, 13: 1}, 5)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2009
-({1: 3, 6: 1, 37: 1, 150: 13, 13: 1}, 19)
-Seconds Taken: 3.84866040959e-06
+value needed: 23
+({1: 4, 6: 1, 37: 0, 150: 0, 13: 1}, 6)
+Seconds Taken: 3.5279387088e-06
  
-value needed: 2010
-({1: 4, 6: 1, 37: 1, 150: 13, 13: 1}, 20)
-Seconds Taken: 3.84866040959e-06
+value needed: 24
+({1: 5, 6: 1, 37: 0, 150: 0, 13: 1}, 7)
+Seconds Taken: 3.207217008e-06
+ 
+value needed: 25
+({1: 0, 6: 2, 37: 0, 150: 0, 13: 1}, 3)
+Seconds Taken: 3.5279387088e-06
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
  
-value needed: 2001
-({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 8.6594859216e-06
+value needed: 16
+({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 1, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0}, 1)
+Seconds Taken: 8.3387642208e-06
  
-value needed: 2002
-({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 67)
-Seconds Taken: 7.37659911837e-06
+value needed: 17
+({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 1, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0}, 2)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2003
-({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 7.05587741762e-06
+value needed: 18
+({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 1, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0}, 1)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2004
-({1: 0, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 68)
-Seconds Taken: 7.05587741762e-06
+value needed: 19
+({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 1, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0}, 2)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2005
-({1: 1, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 66}, 69)
-Seconds Taken: 6.73515571681e-06
+value needed: 20
+({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 0}, 1)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2006
-({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 1, 28: 0, 30: 66}, 67)
-Seconds Taken: 7.05587741762e-06
+value needed: 21
+({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 0}, 2)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2007
-({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 1, 28: 0, 30: 66}, 68)
-Seconds Taken: 7.05587741762e-06
+value needed: 22
+({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0}, 1)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2008
-({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 1, 30: 66}, 67)
-Seconds Taken: 7.05587741762e-06
+value needed: 23
+({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0}, 2)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2009
-({1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 1, 30: 66}, 68)
-Seconds Taken: 7.05587741756e-06
+value needed: 24
+({1: 0, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0}, 2)
+Seconds Taken: 6.7351557168e-06
  
-value needed: 2010
-({1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 67}, 67)
-Seconds Taken: 9.62165102397e-06
+value needed: 25
+({1: 1, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0}, 3)
+Seconds Taken: 6.7351557168e-06
  
 
 Alternative Recursive Implementation
 
  denominations: [1, 5, 10, 25, 50]
  
-value needed: 2010
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 2
+Min # of coins needed / coin Frequency: (2, {1: 2, 10: 0, 50: 0, 5: 0, 25: 0})
+Seconds Taken: 1.50739199376e-05
  
-value needed: 2015
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 5
+Min # of coins needed / coin Frequency: (1, {1: 0, 10: 0, 50: 0, 5: 1, 25: 0})
+Seconds Taken: 2.405412756e-05
  
-value needed: 2020
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 10
+Min # of coins needed / coin Frequency: (1, {1: 0, 10: 1, 50: 0, 5: 0, 25: 0})
+Seconds Taken: 9.52543451376e-05
  
-value needed: 2025
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 15
+Min # of coins needed / coin Frequency: (2, {1: 0, 10: 1, 50: 0, 5: 1, 25: 0})
+Seconds Taken: 0.000434898626285
  
-value needed: 2030
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 20
+Min # of coins needed / coin Frequency: (2, {1: 0, 10: 2, 50: 0, 5: 0, 25: 0})
+Seconds Taken: 0.00198334299775
  
-value needed: 2035
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 25
+Min # of coins needed / coin Frequency: (1, {1: 0, 10: 0, 50: 0, 5: 0, 25: 1})
+Seconds Taken: 0.00932690778097
  
-value needed: 2040
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 30
+Min # of coins needed / coin Frequency: (2, {1: 0, 10: 0, 50: 0, 5: 1, 25: 1})
+Seconds Taken: 0.0442323333658
  
-value needed: 2050
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 35
+Min # of coins needed / coin Frequency: (2, {1: 0, 10: 1, 50: 0, 5: 0, 25: 1})
+Seconds Taken: 0.204151229262
  
-value needed: 2080
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 40
+Min # of coins needed / coin Frequency: (3, {1: 0, 10: 1, 50: 0, 5: 1, 25: 1})
+Seconds Taken: 0.944316619029
  
-value needed: 2200
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 45
+Min # of coins needed / coin Frequency: (3, {1: 0, 10: 2, 50: 0, 5: 0, 25: 1})
+Seconds Taken: 4.3150879034
  
 
  denominations: [1, 2, 6, 12, 24, 48, 60]
  
-value needed: 2001
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 11
+Min # of coins needed / coin Frequency: (4, {1: 1, 2: 2, 6: 1, 12: 0, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.00201445300273
  
-value needed: 2002
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 12
+Min # of coins needed / coin Frequency: (1, {1: 0, 2: 0, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.0032489108291
  
-value needed: 2003
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 13
+Min # of coins needed / coin Frequency: (2, {1: 1, 2: 0, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.00545547613061
  
-value needed: 2004
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 14
+Min # of coins needed / coin Frequency: (2, {1: 0, 2: 1, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.00913736125579
  
-value needed: 2005
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 15
+Min # of coins needed / coin Frequency: (3, {1: 1, 2: 1, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.015115293037
  
-value needed: 2006
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 16
+Min # of coins needed / coin Frequency: (3, {1: 0, 2: 2, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.025347918901
  
-value needed: 2007
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 17
+Min # of coins needed / coin Frequency: (4, {1: 1, 2: 2, 6: 0, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.0423933151334
  
-value needed: 2008
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 18
+Min # of coins needed / coin Frequency: (2, {1: 0, 2: 0, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.0725626433626
  
-value needed: 2009
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 19
+Min # of coins needed / coin Frequency: (3, {1: 1, 2: 0, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.117676319962
  
-value needed: 2010
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 20
+Min # of coins needed / coin Frequency: (3, {1: 0, 2: 1, 6: 1, 12: 1, 48: 0, 24: 0, 60: 0})
+Seconds Taken: 0.196934990994
  
 
  denominations: [1, 6, 13, 37, 150]
  
-value needed: 2001
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 16
+Min # of coins needed / coin Frequency: (4, {1: 3, 150: 0, 13: 1, 6: 0, 37: 0})
+Seconds Taken: 0.000357604696393
  
-value needed: 2002
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 17
+Min # of coins needed / coin Frequency: (5, {1: 4, 150: 0, 13: 1, 6: 0, 37: 0})
+Seconds Taken: 0.000463122135955
  
-value needed: 2003
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 18
+Min # of coins needed / coin Frequency: (3, {1: 0, 150: 0, 13: 0, 6: 3, 37: 0})
+Seconds Taken: 0.000623482986356
  
-value needed: 2004
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 19
+Min # of coins needed / coin Frequency: (2, {1: 0, 150: 0, 13: 1, 6: 1, 37: 0})
+Seconds Taken: 0.000800200643496
  
-value needed: 2005
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 20
+Min # of coins needed / coin Frequency: (3, {1: 1, 150: 0, 13: 1, 6: 1, 37: 0})
+Seconds Taken: 0.00113792059444
  
-value needed: 2006
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 21
+Min # of coins needed / coin Frequency: (4, {1: 2, 150: 0, 13: 1, 6: 1, 37: 0})
+Seconds Taken: 0.0013220148507
  
-value needed: 2007
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 22
+Min # of coins needed / coin Frequency: (5, {1: 3, 150: 0, 13: 1, 6: 1, 37: 0})
+Seconds Taken: 0.00180726678401
  
-value needed: 2008
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 23
+Min # of coins needed / coin Frequency: (6, {1: 4, 150: 0, 13: 1, 6: 1, 37: 0})
+Seconds Taken: 0.00230181964664
  
-value needed: 2009
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 24
+Min # of coins needed / coin Frequency: (4, {1: 0, 150: 0, 13: 0, 6: 4, 37: 0})
+Seconds Taken: 0.00302376419514
  
-value needed: 2010
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 25
+Min # of coins needed / coin Frequency: (3, {1: 0, 150: 0, 13: 1, 6: 2, 37: 0})
+Seconds Taken: 0.00394166970283
  
 
  denominations: [1, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 26, 28, 30]
  
-value needed: 2001
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 16
+Min # of coins needed / coin Frequency: (1, {1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 1, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 0.171779825835
  
-value needed: 2002
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 17
+Min # of coins needed / coin Frequency: (2, {1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 1, 18: 0, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 0.309100670693
  
-value needed: 2003
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 18
+Min # of coins needed / coin Frequency: (1, {1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 1, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 0.57488723425
  
-value needed: 2004
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 19
+Min # of coins needed / coin Frequency: (2, {1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 1, 20: 0, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 1.00373223843
  
-value needed: 2005
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 20
+Min # of coins needed / coin Frequency: (1, {1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 1.7455159899
  
-value needed: 2006
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 21
+Min # of coins needed / coin Frequency: (2, {1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 1, 22: 0, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 3.2169255746
  
-value needed: 2007
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 22
+Min # of coins needed / coin Frequency: (1, {1: 0, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 5.87386592807
  
-value needed: 2008
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 23
+Min # of coins needed / coin Frequency: (2, {1: 1, 2: 0, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 10.2795182632
  
-value needed: 2009
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 24
+Min # of coins needed / coin Frequency: (2, {1: 0, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 18.4017972603
  
-value needed: 2010
-Min # of coins needed / coin Frequency: input is too large for slow change 
-Seconds Taken: 0
+value needed: 25
+Min # of coins needed / coin Frequency: (3, {1: 1, 2: 1, 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 16: 0, 18: 0, 20: 0, 22: 1, 26: 0, 28: 0, 30: 0})
+Seconds Taken: 33.0013999502
  

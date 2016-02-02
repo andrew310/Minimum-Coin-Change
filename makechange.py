@@ -233,14 +233,11 @@ def testHelper(algorithm, note):
                 coinsDict = {}
                 outFile.write("value needed: " + str(v) + "\n")
                 outFile.write("Min # of coins needed / coin Frequency: ")
-                if len(denoms) >4:
-                    outFile.write("input is too large for slow change \n")
-                else: 
-                    start = time.clock()
-                    outFile.write(str(change_Slow(denoms, v, 0, coinsDict, True)))
-                    end = time.clock()
-                    seconds = end - start
-                    outFile.write("\n")
+                start = time.clock()
+                outFile.write(str(change_Slow(denoms, v, 0, coinsDict, True)))
+                end = time.clock()
+                seconds = end - start
+                outFile.write("\n")
             else:
                 outFile.write("value needed: " + str(v) + "\n")
                 start = time.clock()
