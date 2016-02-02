@@ -11,20 +11,8 @@ Greedy Algorithm Results:
 ({16: 7, 8: 1, 2: 0, 4: 0, 1: 0}, 8)
 ({3: 2, 9: 0, 27: 1, 1: 2}, 5)
 
-Brute Force/Recursive Algorithm Results:
-<<<<<<< HEAD
-Minimum # of coins needed: 2
-Coin Count: {'1': 0, '10': 0, '5': 0, '50': 1, '25': 1}
-Minimum # of coins needed: 5
-Coin Count: {'1': 3, '10': 1, '21': 0, '50': 1}
-Minimum # of coins needed: 8
-Coin Count: {'1': 0, '8': 1, '2': 0, '4': 0, '16': 7}
-Minimum # of coins needed: 5
-Coin Count: {'1': 2, '9': 0, '3': 2, '27': 1}
-
 Recursive Alternative Results: 
-Minimum # of coins needed: / coin Freq Count: 
-=======
-([0, 0, 0, 1, 1], 2)
-([0, 0, 3, 0], 3)
->>>>>>> a2e57da7c71b2809c46524d1b3db3db02b979116
+Minimum # of coins needed: / coin Freq Count: Input too large for change slow algorithm 
+Minimum # of coins needed: / coin Freq Count: (3, {1: 0, 10: 0, 50: 0, 21: 3})
+Minimum # of coins needed: / coin Freq Count: Input too large for change slow algorithm 
+Minimum # of coins needed: / coin Freq Count: (5, {27: 1, 1: 2, 3: 2, 9: 0})

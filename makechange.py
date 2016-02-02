@@ -169,7 +169,7 @@ def changeGreedy2(coins, value):
 ## THIS IS NECESSARY BECAUSE THERE WERE BLANK LINES AT END OF PROVIDED FILE ##
 ## THE BLANK LINES WERE THROWING ERRORS IN LITERAL EVAL ##
 
-if = open("CoinW16.txt", "r")
+f = open("CoinW16.txt", "r")
 lines = f.readlines()
 f.close()
 f = open("CoinW16.txt", "w")
@@ -196,8 +196,11 @@ def runAlgorithm(algorithm, note):
         if algorithm == 'change_Slow':
             coinsDict = {}
             outFile.write("Minimum # of coins needed: / coin Freq Count: ")
-            outFile.write(str(change_Slow(denoms, valueNeeded, 0, coinsDict, True)))
-            outFile.write("\n")            
+            if len(denoms) >4:
+                outFile.write("Input too large for change slow algorithm \n")
+            else:
+                outFile.write(str(change_Slow(denoms, valueNeeded, 0, coinsDict, True)))
+                outFile.write("\n")            
         else:
             outFile.write(str(algorithm(denoms, valueNeeded)))
             outFile.write("\n")
@@ -205,18 +208,11 @@ def runAlgorithm(algorithm, note):
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
-<<<<<<< HEAD
 runAlgorithm('change_Slow', "Recursive Alternative Results: ")
-=======
-runAlgorithm(changeSlow2, "Brute Force/Recursive Algorithm Results:")
->>>>>>> a2e57da7c71b2809c46524d1b3db3db02b979116
-
 
 outFile.close()
 
-"""
-FOR TESTING
-"""
+############ TESTING SECTION #################
 outFile = open("testResults.txt", "w")
 
 def testHelper(algorithm, note):
@@ -237,11 +233,14 @@ def testHelper(algorithm, note):
                 coinsDict = {}
                 outFile.write("value needed: " + str(v) + "\n")
                 outFile.write("Min # of coins needed / coin Frequency: ")
-                start = time.clock()
-                outFile.write(str(change_Slow(denoms, v, 0, coinsDict, True)))
-                end = time.clock()
-                seconds = end - start
-                outFile.write("\n")
+                if len(denoms) >4:
+                    outFile.write("input is too large for slow change \n")
+                else: 
+                    start = time.clock()
+                    outFile.write(str(change_Slow(denoms, v, 0, coinsDict, True)))
+                    end = time.clock()
+                    seconds = end - start
+                    outFile.write("\n")
             else:
                 outFile.write("value needed: " + str(v) + "\n")
                 start = time.clock()
