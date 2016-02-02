@@ -37,8 +37,8 @@ def change_Slow(coinValueList, total, numCoins, coinDict, build):
 
 
 def build_Dict(coinValueList, coinsDict):
-    for i in range(len(coinValueList)):
-        coinsDict[str(coinValueList[i])] = 0
+    for coin in coinValueList:
+        coinsDict[coin] = 0
 
 def changeSlow2(coinArray, value):
     minSum = value
