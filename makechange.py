@@ -36,7 +36,7 @@ def change_Slow(coinValueList, total, numCoins, coinDict, build):
     return (bestCoins, bestDict)
 
 
-def buildDict(coinValueList, coinsDict):
+def build_Dict(coinValueList, coinsDict):
     for i in range(len(coinValueList)):
         coinsDict[str(coinValueList[i])] = 0
 
