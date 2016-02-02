@@ -196,13 +196,16 @@ def runAlgorithm(algorithm, note):
     while True:
         line1 = inFile.readline()
         line2 = inFile.readline()
-        if not line1: break
+        if not line1: 
+            break
+        line1 = line1.strip("\r\n")
+        line2 = line2.strip("\r\n")
         denoms = literal_eval(line1)
         valueNeeded = literal_eval(line2)
         if algorithm == 'change_Slow':
             coinsDict = {}
             outFile.write("Minimum # of coins needed: / coin Freq Count: ")
-            if len(denoms) >4:
+            if len(denoms) > 4:
                 outFile.write("Input too large for change slow algorithm \n")
             else:
                 outFile.write(str(change_Slow(denoms, valueNeeded, 0, coinsDict, True)))
