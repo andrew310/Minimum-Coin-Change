@@ -4,7 +4,7 @@ from ast import literal_eval
 import sys
 import time
 
-sys.setrecursionlimit(10000) #for testing on changeslow
+sys.setrecursionlimit(85) #for testing on changeslow
 
 def change_Slow(coinValueList, total, numCoins, coinDict, build):
     if build == True:
@@ -39,6 +39,28 @@ def change_Slow(coinValueList, total, numCoins, coinDict, build):
 def buildDict(coinValueList, coinsDict):
     for i in range(len(coinValueList)):
         coinsDict[str(coinValueList[i])] = 0
+
+def changeSlow2(coinArray, value):
+    minSum = value
+    minCoins = [0] * len(coinArray)
+
+    if value in coinArray:
+        minCoins = [0 for c in coinArray]
+        minCoins[coinArray.index(value)] +=1
+        return minCoins, sum(minCoins)
+
+    for i in range(0, len(coinArray)):
+        if(coinArray[i] <= value):
+            tempArr, tempCoins = changeSlow2(coinArray, value - coinArray[i])
+            tempCoins +=1
+            tempArr[i] = tempArr[i] + 1
+
+            if tempCoins < minSum:
+                minSum = tempCoins
+                minCoins = tempArr
+                
+    return minCoins, minSum
+        
 
 
 ##############################################################
@@ -183,7 +205,11 @@ def runAlgorithm(algorithm, note):
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
+<<<<<<< HEAD
 runAlgorithm('change_Slow', "Recursive Alternative Results: ")
+=======
+runAlgorithm(changeSlow2, "Brute Force/Recursive Algorithm Results:")
+>>>>>>> a2e57da7c71b2809c46524d1b3db3db02b979116
 
 
 outFile.close()
@@ -232,5 +258,5 @@ testHelper(changeGreedy2, "Greedy Algorithm Results:")
 testHelper('change_Slow', "Alternative Recursive Implementation")
 
 
-outFile.close()'''
+outFile.close()
 
