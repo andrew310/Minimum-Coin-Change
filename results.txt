@@ -20,3 +20,6 @@ Minimum # of coins needed: 8
 Coin Count: {'1': 0, '8': 1, '2': 0, '4': 0, '16': 7}
 Minimum # of coins needed: 5
 Coin Count: {'1': 2, '9': 0, '3': 2, '27': 1}
+
+Recursive Alternative Results: 
+Minimum # of coins needed: / coin Freq Count: 

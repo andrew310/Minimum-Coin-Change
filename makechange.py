@@ -6,18 +6,34 @@ import time
 
 sys.setrecursionlimit(10000) #for testing on changeslow
 
-def changeSlow(coinValueList, total, coinsDict, build):
+def change_Slow(coinValueList, total, numCoins, coinDict, build):
     if build == True:
-        buildDict(coinValueList, coinsDict)
+        build_Dict(coinValueList, coinDict)
+
     if total == 0:
-        return 0
-    if total >= max(coinValueList):
-        total -= max(coinValueList)
-        coinsDict[str(max(coinValueList))] += 1
-    else:
-        coinValueList.pop()
-        return changeSlow(coinValueList, total, coinsDict, False)
-    return 1 + changeSlow(coinValueList, total, coinsDict, False)
+        return (numCoins, coinDict)
+
+    bestCoins = -1
+    bestDict = {}
+
+    for i in range(len(coinValueList)):
+
+        dictCopy = {}
+
+        for coin in coinValueList:
+            dictCopy[coin] = coinDict[coin]
+
+        coin = coinValueList[i]
+
+        if coin <= total:
+            dictCopy[coin] += 1
+            (subCoins, subDict) = change_Slow(coinValueList, total - coin, numCoins + 1, dictCopy, False)
+
+        if bestCoins == - 1 or subCoins < bestCoins:
+            bestCoins = subCoins
+            bestDict = subDict
+
+    return (bestCoins, bestDict)
 
 
 def buildDict(coinValueList, coinsDict):
@@ -126,11 +142,12 @@ def changeGreedy2(coins, value):
         dictionaryCount[coins[i]] = temp
     return (dictionaryCount, coinCount)
 
+
 ###CLEAN THE FILE###
 ## THIS IS NECESSARY BECAUSE THERE WERE BLANK LINES AT END OF PROVIDED FILE ##
 ## THE BLANK LINES WERE THROWING ERRORS IN LITERAL EVAL ##
 
-f = open("CoinW16.txt", "r")
+if = open("CoinW16.txt", "r")
 lines = f.readlines()
 f.close()
 f = open("CoinW16.txt", "w")
@@ -154,13 +171,11 @@ def runAlgorithm(algorithm, note):
         if not line1: break
         denoms = literal_eval(line1)
         valueNeeded = literal_eval(line2)
-        if algorithm == 'changeSlow':
+        if algorithm == 'change_Slow':
             coinsDict = {}
-            outFile.write("Minimum # of coins needed: ")
-            outFile.write(str(changeSlow(denoms, valueNeeded, coinsDict, True)))
-            outFile.write("\nCoin Count: ")
-            outFile.write(str(coinsDict))
-            outFile.write("\n")
+            outFile.write("Minimum # of coins needed: / coin Freq Count: ")
+            outFile.write(str(change_Slow(denoms, valueNeeded, 0, coinsDict, True)))
+            outFile.write("\n")            
         else:
             outFile.write(str(algorithm(denoms, valueNeeded)))
             outFile.write("\n")
@@ -168,7 +183,7 @@ def runAlgorithm(algorithm, note):
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
-runAlgorithm('changeSlow', "Brute Force/Recursive Algorithm Results:")
+runAlgorithm('change_Slow', "Recursive Alternative Results: ")
 
 
 outFile.close()
@@ -192,16 +207,14 @@ def testHelper(algorithm, note):
         outFile.write("\n denominations: " + str(denoms) + "\n \n")
         seconds = 0
         for v in valueNeeded:
-            if algorithm == 'changeSlow':
+            if algorithm == 'change_Slow':
                 coinsDict = {}
                 outFile.write("value needed: " + str(v) + "\n")
-                outFile.write("Minimum # of coins needed: ")
+                outFile.write("Min # of coins needed / coin Frequency: ")
                 start = time.clock()
-                outFile.write(str(changeSlow(denoms, v, coinsDict, True)))
+                outFile.write(str(change_Slow(denoms, v, 0, coinsDict, True)))
                 end = time.clock()
                 seconds = end - start
-                outFile.write("\nCoin Count: ")
-                outFile.write(str(coinsDict))
                 outFile.write("\n")
             else:
                 outFile.write("value needed: " + str(v) + "\n")
@@ -216,8 +229,8 @@ def testHelper(algorithm, note):
 
 testHelper(changeDP, "Dynamic Programming results:")
 testHelper(changeGreedy2, "Greedy Algorithm Results:")
-testHelper('changeSlow', "Brute Force/Recursive Algorithm Results:")
+testHelper('change_Slow', "Alternative Recursive Implementation")
 
 
-outFile.close()
+outFile.close()'''
 
