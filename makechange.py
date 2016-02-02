@@ -1,4 +1,4 @@
-__author__ = 'Andrew.Brown'
+__author__ = 'Andrew.Brown, Robert Ottolia, Luke Brewbaker'
 
 from ast import literal_eval
 import sys
@@ -6,6 +6,12 @@ import time
 
 sys.setrecursionlimit(85) #for testing on changeslow
 
+
+##############################################################
+# change_Slow(coins, value, numCoins, coinDict, build)
+# This function uses the brute force approach to solve the min coin problem
+# inputs: denomination array, value needed, current sum of coins, coin dictionary and boolean 
+# returns: an array with a count of how many times each denomination was used, and an int with the sum
 def change_Slow(coinValueList, total, numCoins, coinDict, build):
     if build == True:
         build_Dict(coinValueList, coinDict)
@@ -208,11 +214,11 @@ def runAlgorithm(algorithm, note):
 
 runAlgorithm(changeDP, "Dynamic Programming results:")        
 runAlgorithm(changeGreedy2, "Greedy Algorithm Results:")
-runAlgorithm('change_Slow', "Recursive Alternative Results: ")
+runAlgorithm('change_Slow', "Brute Force Recursive Results: ")
 
 outFile.close()
 
-############ TESTING SECTION #################
+"""
 outFile = open("testResults.txt", "w")
 
 def testHelper(algorithm, note):
@@ -255,4 +261,5 @@ testHelper('change_Slow', "Alternative Recursive Implementation")
 
 
 outFile.close()
+"""
 
